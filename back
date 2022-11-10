@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    enter first number:<input type="firsttext" id="firsttext"><br>
+    enter second number:<input type="secondtext" id="secondtext">
+    <button type="button" id="mybutton">submit</button>
+    <script src="back.js"></script>
+</body>
+</html>
+
+
+var firstnumber;
+var secondnumber;
+document.getElementById("mybutton").onclick = function(){
+    firstnumber = document.getElementById("firsttext").value;
+    secondnumber = document.getElementById("secondtext").value;
+    console.log("Even numbers")
+    for( firstnumber = 1; firstnumber <= secondnumber; firstnumber++){
+        if(firstnumber %2 == 0){
+            console.log(firstnumber);
+        }
+    }
+}
